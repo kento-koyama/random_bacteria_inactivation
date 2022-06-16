@@ -8,8 +8,8 @@ st.write("Simulation")
 
 Mean_N0 = st.number_input('N0',value=100)
 rep = st.number_input('Repetition',value=100)
-param_b = st.number_input('param_b',value=1.000)
-param_n = st.number_input('param_n',value=1.000)
+param_b = st.number_input('Parameter b',value=1.000)
+param_n = st.number_input('Parameter n',value=1.000)
 st.write('N0 is', Mean_N0, 'Parameter b is ', param_b,'Parameter n is ', param_n)
 
 
