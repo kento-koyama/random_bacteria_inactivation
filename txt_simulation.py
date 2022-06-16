@@ -4,7 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 st.title('Monte Carlo simulation for bacterial inactivation')
-st.write("Simulation")
+st.write("## Simulation")
 
 Mean_N0 = st.number_input('N0',value=100)
 rep = st.number_input('Repetition',value=100)
@@ -27,5 +27,5 @@ ax.set_xlabel('Inactivation time [h]', fontsize=16, color='k')
 ax.tick_params(labelsize=16, direction='out')
 st.pyplot(fig)
     
-st.write('Reference')
+st.write('## Reference')
 st.write('Transforming kinetic model into a stochastic inactivation model: Statistical evaluation of stochastic inactivation of individual cells in a bacterial population')
