@@ -22,7 +22,7 @@ for i in range(rep):
     x = np.append(0,inactivation_time)
     y = np.arange(N0,-1,-1)
     ax.plot(x, np.log10(y), drawstyle='steps-post', zorder=1, label='')
-ax.set_ylabel("Survival cell counts [$log_{10}$CFU]", fontsize=16)
+ax.set_ylabel("Survival cell counts [$\log_{10}$CFU]", fontsize=16)
 ax.set_xlabel('Inactivation time [h]', fontsize=16, color='k')
 ax.tick_params(labelsize=16, direction='out')
 st.pyplot(fig)
