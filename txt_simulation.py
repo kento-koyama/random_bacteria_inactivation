@@ -1,19 +1,17 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
+import matplotlib.pyplot as plt
 
 st.title('Monte Carlo simulation for bacterial inactivation')
 st.write("Simulation")
 
-Mean_N0 = st.number_input('Mean_N0',value=1000)
-rep = st.number_input('repetition',value=1000)
+Mean_N0 = st.number_input('N0',value=100)
+rep = st.number_input('Repetition',value=100)
 param_b = st.number_input('param_b',value=1.000)
 param_n = st.number_input('param_n',value=1.000)
-st.write('Parameter b is ', param_b,'Parameter n is ', param_n)
+st.write('N0 is', Mean_N0, 'Parameter b is ', param_b,'Parameter n is ', param_n)
 
-
-import matplotlib.pyplot as plt
-import numpy as np
 
 
 fig, ax = plt.subplots()
@@ -29,3 +27,5 @@ ax.set_xlabel('Inactivation time [h]', fontsize=16, color='k')
 ax.tick_params(labelsize=16, direction='out')
 st.pyplot(fig)
     
+st.write('Reference')
+st.write('Transforming kinetic model into a stochastic inactivation model: Statistical evaluation of stochastic inactivation of individual cells in a bacterial population')
