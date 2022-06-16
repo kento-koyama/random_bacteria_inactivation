@@ -29,4 +29,4 @@ st.pyplot(fig)
     
 st.write('## Reference')
 link = '[doi.org/10.1016/j.fm.2020.103508](https://doi.org/10.1016/j.fm.2020.103508)'
-st.markdown('Hiura, S., Abe, H., Koyama, K., Koseki, S. Transforming kinetic model into a stochastic inactivation model: Statistical evaluation of stochastic inactivation of individual cells in a bacterial population,  2020, Food Microbiology, 91, 103508.',link, unsafe_allow_html=True)
+st.markdown('Hiura, S., Abe, H., Koyama, K., Koseki, S. Transforming kinetic model into a stochastic inactivation model: Statistical evaluation of stochastic inactivation of individual cells in a bacterial population,  2020, Food Microbiology, 91, 103508.',link)
