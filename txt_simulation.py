@@ -6,10 +6,10 @@ import matplotlib.pyplot as plt
 st.title('Monte Carlo simulation for bacterial inactivation')
 st.write("## Simulation")
 
-Mean_N0 = st.number_input('N0',value=100)
-rep = st.number_input('Repetition',value=100)
-param_b = st.number_input('Parameter b',value=1.000)
-param_n = st.number_input('Parameter n',value=1.000)
+Mean_N0 = st.number_input('N0',value=100, min_value=1, max_value=10**3)
+rep = st.number_input('Repetition',value=100, min_value=1, max_value=10**3)
+param_b = st.number_input('Parameter b',value=1.000, min_value=0)
+param_n = st.number_input('Parameter n',value=1.000, min_value=0)
 st.write('N0 is', Mean_N0, 'Parameter b is ', param_b,'Parameter n is ', param_n)
 
 
